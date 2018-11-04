@@ -4,7 +4,7 @@ import functions
 def main():
     parser = argparse.ArgumentParser(description='CT Image Reconstruction')
     parser.add_argument('-i', '--input_image', type=str, help='path to the location of input image')
-    parser.add_argument('-f', '--input_image', type=str, help='path to the location of input image')
+    parser.add_argument('-f', '--function', type=str, help='function to be applied to the input image')
     args = parser.parse_args()
 
     if(args.input_image == None):
